@@ -1,0 +1,9 @@
+    if removepunc== 'on' :
+        punctuations = '''!()-[]{};:,<>/?@#$%^&*_-'''
+        analyzed = ""
+        for char in djtext :
+            if char not in punctuations :
+                analyzed = analyzed + char
+
+        params = {'purpose' :'remove punctuations' , 'analyzed_text':analyzed}
+        djtext = analyzed
