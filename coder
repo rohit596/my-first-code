@@ -7,3 +7,7 @@
 
         params = {'purpose' :'remove punctuations' , 'analyzed_text':analyzed}
         djtext = analyzed
+ if largecap == 'on'
+    analyzed = ""
+    for char in djtext :
+        if char not in punctuation
